@@ -1,0 +1,9 @@
+def print_range(start, end):
+    for num in range(start, end + 1):
+        print(num)
+
+# Example usage:
+start = int(input("Enter the start of the range: "))
+end = int(input("Enter the end of the range: "))
+
+print_range(start, end)
