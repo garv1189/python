@@ -1,0 +1,10 @@
+def fibonacci(n):
+    fib_sequence = [0, 1]  # Initial two Fibonacci numbers
+    while len(fib_sequence) < n:
+        next_value = fib_sequence[-1] + fib_sequence[-2]
+        fib_sequence.append(next_value)
+    return fib_sequence[:n]
+
+# Example usage:
+n = int(input("Enter the number of Fibonacci numbers you want: "))
+print(fibonacci(n))
